@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Temporizador</title>
+     <link rel="stylesheet" href="temporizador.css">
+     <link rel="stylesheet" href="https://unpkg.com/bulma">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+
+</head>
+<body>
+     
+     <section class="section">
+		<div class="columns is-centered">
+			<div class="column has-text-centered">
+				<div id="contenedorInputs">
+					<div class="field">
+                              <label class="label">Horas</label>
+                              <input type="number" min="0" id="horas" class="input" placeholder="Horas">
+						<label class="label">Minutos</label>
+						<div class="control">
+							<input class="input" id="minutos" maxlength="2" type="number" min="0" max="59" placeholder="Minutos">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Segundos</label>
+						<div class="control">
+							<input class="input" id="segundos" type="number" placeholder="Segundos" min="0" max="59" maxlength="2">
+						</div>
+					</div>
+				</div>
+				<h2 id="tiempoRestante">00:00:00</h2>
+				<audio src="Uy Uy Uy Pdrr.mp3"></audio>
+				<audio src="Soy Muy Cagon.mp3"></audio>
+				<audio src="Ahi Lo Tenes Al Pelo.mp3"></audio>
+				<button id="btnIniciar" onclick="ocultarInputs()" onfocus="musica2.play()" class="button is-success"><span class="mdi mdi-play"></span></button>
+				<button id="btnPausar" onclick="verBotonIniciar()" onfocus="musica.play()" class="button is-success"><span class="mdi mdi-pause"></span></button>
+				<button id="btnDetener" onclick="mostrarInputs()" onfocus="musica3.play()" class="button is-success"><span class="mdi mdi-stop"></span></button>
+				<br>
+				
+			</div>
+		</div>
+	</section>
+
+
+
+     <script src="temporizador.js"></script>
+	<script src="temporizadorEventListeners.js"></script>
+</body>
+</html>

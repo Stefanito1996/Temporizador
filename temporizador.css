@@ -1,0 +1,53 @@
+section {
+     padding: 3rem 3rem;
+     background: darkred;
+     color: #fff;
+ }
+
+ .label {
+     color: #363636;
+     display: block;
+     font-size: 1rem;
+     font-weight: 700;
+     color: #fff;
+ }
+
+ .label:not(:last-child) {
+     margin-bottom: 0.5em;
+     color: #fff;
+ }
+
+ .label:not(:last-child):hover 
+ {
+     cursor: pointer;
+ }
+ 
+ .input:hover 
+ {
+     background-color: #ccc;
+ }
+
+#btnIniciar:hover 
+{
+     font-size: 17px;
+}
+#btnDetener:hover 
+{
+     font-size: 17px;
+}
+#btnPausar:hover 
+{
+     font-size: 17px;
+}
+
+.section 
+{
+     box-shadow: 2px 2px 2px 2px #000066;
+}
+
+h2#tiempoRestante {
+font-size: 2rem;
+font-weight: normal;
+font-size: 25px;
+}
+
