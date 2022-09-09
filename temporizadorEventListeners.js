@@ -1,3 +1,7 @@
+const musica = new Audio ("mario-bros-mamma-mia.mp3");
+const musica2 = new Audio ("mario-bros-woo-hoo.mp3")
+const musica3 = new Audio ("mario-bros-die.mp3");
+
 segundosInput.addEventListener("input", () => {
      if (Number(segundosInput.value) > 59 || (Number(segundosInput.value) < 0))  //en esta forma de validacion, no queda el 0 puesto en el input.
      {
@@ -35,7 +39,7 @@ var intervalId = setInterval(() => {   // debes asignar una variable al set Inte
           
           if (horasDisplay == 0 && minutesDisplay == 0 && secondsDisplay <= 0) 
           {
-               alert ("El contador ha finalizado")
+               musica3.play()
                horasInput.value = "";  //borra numeros del input al detener
                minutosInput.value = "";
                segundosInput.value = "";
@@ -99,9 +103,6 @@ btnIniciar.addEventListener ("click", () => {
 
 })
 
-const musica = new Audio ("mario-bros-mamma-mia.mp3");
-const musica2 = new Audio ("mario-bros-woo-hoo.mp3")
-const musica3 = new Audio ("mario-bros-die.mp3");
 
 musica.play();
 musica2.play();
