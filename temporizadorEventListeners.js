@@ -99,9 +99,9 @@ btnIniciar.addEventListener ("click", () => {
 
 })
 
-const musica = new Audio ("Ahi Lo Tenes Al Pelo.mp3");
-const musica2 = new Audio ("Uy Uy Uy Pdrr.mp3")
-const musica3 = new Audio ("Soy Muy Cagon.mp3");
+const musica = new Audio ("mario-bros-mamma-mia.mp3");
+const musica2 = new Audio ("mario-bros-woo-hoo.mp3")
+const musica3 = new Audio ("mario-bros-die.mp3");
 
 musica.play();
 musica2.play();
